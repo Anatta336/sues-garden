@@ -507,6 +507,16 @@ a:hover {
   flex: 1 1 180px;
 }
 
+.comments-area .comment-list {
+  list-style: none;
+}
+.comments-area .comment-list img.avatar {
+  display: none;
+}
+.comments-area .comment-list time {
+  font-size: 0.8rem;
+}
+
 .entry-header {
   border: 1px solid #776b5d;
 }

@@ -1,0 +1,13 @@
+@use '../font';
+
+.comments-area .comment-list {
+    list-style: none;
+
+    img.avatar {
+        display: none;
+    }
+
+    time {
+        font-size: font.$size-s1;
+    }
+}
