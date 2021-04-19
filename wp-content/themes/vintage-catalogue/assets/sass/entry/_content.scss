@@ -1,0 +1,14 @@
+@use '../colour';
+
+.entry-content {
+    p::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 3rem;
+
+        background-color: colour.$foreground-very-faint;
+
+        margin: 20px auto;
+    }
+}

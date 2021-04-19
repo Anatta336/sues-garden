@@ -1,0 +1,27 @@
+@use '../part/main-size';
+@use '../font';
+
+.site-branding {
+    @include main-size.main-size;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    h1 a {
+        @include font.header();
+        font-style: normal;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    img {
+        max-height: 120px;
+        width: 100%;
+    }
+}

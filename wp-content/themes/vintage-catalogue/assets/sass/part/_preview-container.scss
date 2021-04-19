@@ -1,0 +1,5 @@
+@use 'main-size';
+
+@mixin preview-container {
+    @include main-size.main-size-and-padding;
+}

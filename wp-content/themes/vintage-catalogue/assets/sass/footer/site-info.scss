@@ -1,0 +1,6 @@
+@use '../font';
+
+.site-info {
+    font-size: font.$size-s1;
+    text-align: right
+}

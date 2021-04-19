@@ -1,0 +1,17 @@
+@use '../colour';
+
+.page-header {
+    border: 1px solid colour.$foreground-lighter;
+
+    h1 {
+        padding: 15px;
+        text-align: center;
+    }
+    h1 a {
+        font-style: normal;
+        &:hover {
+            text-decoration: underline;
+            color: colour.$foreground-lighter;
+        }
+    }
+}

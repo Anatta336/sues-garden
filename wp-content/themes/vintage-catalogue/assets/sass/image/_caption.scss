@@ -1,0 +1,7 @@
+@use '../font';
+
+.wp-block-image {
+    figcaption {
+        font-size: font.$size-s1;
+    }
+}

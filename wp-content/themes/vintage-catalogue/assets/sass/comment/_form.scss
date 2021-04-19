@@ -1,0 +1,56 @@
+@use '../colour';
+@use '../part/button';
+
+.comment-form {
+    // text area and label
+    .comment-form-comment {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+        font-weight: 700;
+    }
+
+    span.required {
+        color: red;
+    }
+
+    textarea,
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="submit"] {
+        border: 1px solid colour.$foreground;
+        width: 100%;
+        height: 1.8rem;
+    }
+
+    textarea {
+        height: 4.4rem;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    input[type="submit"] {
+        @include button.button-primary;
+    }
+
+    .form-submit {
+        margin-bottom: 0;
+    }
+
+    p.comment-form-cookies-consent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        input {
+            flex: 0 0 auto;
+            margin-right: 5px;
+        }
+        label {
+            flex: 1 1 180px;
+        }
+    }
+}

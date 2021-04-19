@@ -1,0 +1,20 @@
+@use 'part/main-size';
+@use 'colour';
+
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .site-footer {
+        // place the footer at the bottom of the page, even if page content is short
+        margin-top: auto;
+
+        padding: 15px;
+        border-top: 1px solid colour.$foreground-lighter;
+    }
+
+    .site-main {
+        @include main-size.main-size-and-padding;
+    }
+}

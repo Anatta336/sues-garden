@@ -1,0 +1,6 @@
+@use '../part/preview-container';
+
+.posts-list {
+    @include preview-container.preview-container;
+    padding: 0;
+}

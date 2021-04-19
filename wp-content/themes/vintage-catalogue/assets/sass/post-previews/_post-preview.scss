@@ -1,0 +1,35 @@
+@use '../colour';
+
+.post-preview {
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+
+    box-sizing: border-box;
+    border: 1px solid colour.$foreground;
+    background-color: colour.$background-lighter;
+
+    background-size: cover;
+    background-position: center;
+
+    font-style: normal;
+    text-decoration: none;
+
+    .background {
+        background-color: rgba(colour.$background-lighter, 0.85);
+        padding: 15px;
+    }
+
+    &:hover {
+        text-decoration: none;
+        background-color: colour.$button-secondary;
+
+        .background {
+            background-color: rgba(colour.$button-secondary, 0.85);
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+}

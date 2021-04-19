@@ -1,0 +1,40 @@
+@use '../colour';
+@use '../font';
+
+.entry-header {
+    border: 1px solid colour.$foreground-lighter;
+
+    h1 {
+        padding: 15px;
+        text-align: center;
+    }
+    h1 a {
+        font-style: normal;
+        &:hover {
+            text-decoration: underline;
+            color: colour.$foreground-lighter;
+        }
+    }
+
+    .entry-meta {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        border-top: 1px solid colour.$foreground-very-faint;
+        padding: 15px 0;
+
+        &>* {
+            flex: 0 0 10rem;
+        }
+    }
+
+    .post-date,
+    .update-date,
+    .byline {
+        display: block;
+        font-size: font.$size-s1;
+        text-align: center;
+    }
+}

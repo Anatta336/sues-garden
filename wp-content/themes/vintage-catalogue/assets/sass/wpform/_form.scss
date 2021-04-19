@@ -1,0 +1,23 @@
+@use '../colour';
+@use '../part/button';
+
+.wpforms-form {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        box-sizing: border-box !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        border: 1px solid colour.$foreground-lighter !important;
+        border-radius: 0 !important;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button.wpforms-submit {
+        @include button.button-primary-important;
+        width: 100% !important;
+    }
+}

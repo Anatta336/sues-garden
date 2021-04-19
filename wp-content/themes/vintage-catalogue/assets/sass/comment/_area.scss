@@ -1,0 +1,12 @@
+@use '../font';
+@use '../colour';
+
+.comments-area {
+    border: 1px solid colour.$foreground;
+    padding: 15px;
+
+    .comment-reply-title small {
+        display: block;
+        font-size: font.$size-s1;
+    }
+}

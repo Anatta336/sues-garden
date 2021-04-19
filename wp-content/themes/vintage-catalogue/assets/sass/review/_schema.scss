@@ -1,0 +1,20 @@
+@use '../font';
+
+#rank-math-rich-snippet-wrapper {
+    h5 {
+        // plug-in sets the font size to something awful
+        font-size: font.$size-l3 !important;
+    }
+}
+
+.rank-math-review-data {
+    p::after {
+        content: none;
+    }
+
+    // a bit awful, but the generated HTML doesn't have any classes
+    // so just hide the last <p>, which is the in-stock status.
+    p:last-of-type {
+        display: none;
+    }
+}

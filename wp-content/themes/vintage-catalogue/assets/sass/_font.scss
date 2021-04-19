@@ -1,0 +1,16 @@
+$size-l4: 3.052rem;
+$size-l3: 2.441rem;
+$size-l2: 1.563rem;
+$size-l1: 1.250rem;
+$size-m:  1.000rem;
+$size-s1: 0.800rem;
+
+@mixin header {
+    font-family: Scheherazade, serif;
+    font-weight: 700;
+}
+
+@mixin body {
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+}

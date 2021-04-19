@@ -1,0 +1,11 @@
+$padding-sides: 20px;
+
+@mixin main-size {
+    max-width: 45rem;
+}
+
+@mixin main-size-and-padding {
+    @include main-size;
+    width: calc(100vw - #{$padding-sides} * 2);
+    margin: 0 auto;
+}

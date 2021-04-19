@@ -1,0 +1,9 @@
+@use '../part/preview-container';
+
+.related-posts {
+    @include preview-container.preview-container;
+
+    h2 {
+        margin-top: 30px;
+    }
+}

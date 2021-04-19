@@ -1,0 +1,51 @@
+@use '../colour';
+
+@mixin button {
+    display: block;
+    box-sizing: border-box;
+    height: 3.125rem;
+
+    text-decoration: none;
+    font-style: italic;
+    border: 1px solid colour.$foreground;
+    background-color: colour.$button-secondary;
+
+    &:hover {
+        text-decoration: underline;
+        background-color: colour.$button-secondary-hover;
+    }
+}
+
+@mixin button-primary {
+    @include button;
+    background-color: colour.$button-primary;
+
+    &:hover {
+        background-color: colour.$button-primary-hover;
+    }
+}
+
+// Repeating the styles but with !important added is not great.
+// But there's no general way to mark a whole mixin as !important in Sass.
+
+@mixin button-important {
+    display: block !important;
+    box-sizing: border-box !important;
+    height: 3.125rem !important;
+
+    text-decoration: none !important;
+    font-style: italic !important;
+    border: 1px solid colour.$foreground !important;
+    background-color: colour.$button-secondary !important;
+
+    &:hover {
+        text-decoration: underline !important;
+        background-color: colour.$button-secondary-hover !important;
+    }
+}
+
+@mixin  button-primary-important {
+    @include button-important;
+    background-color: colour.$button-primary !important;
+}
+
