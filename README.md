@@ -3,18 +3,20 @@ This is a sample WordPress theme and site created as part of a training course a
 
 ## Usage
 ### Database
-Assuming a MySQL server is already running, create a new table named `sues-garden` and import the `/sues-garden.sql` file to populate it. If using PHPMyAdmin 5.1.0 the default import settings shouldn't need changing.
+Assuming a MySQL server is already running, create a new database named `sues-garden` and import the `/sues-garden.sql` file to populate it with the correct tables. If using PHPMyAdmin 5.1.0 the default import settings shouldn't need changing.
 
 Create a new user on the MySQL server, named `sue-wp` with the password `password`. The user should have full access to the `sues-garden` table. Alternatively grant those rights to an existing existing user and update `/wp-config.php` to contain that user's details.
+
+Make sure the contents of `/wp-config.php` match the database and user that was created.
 
 ### Hosting
 Assuming an Apache server with access to a recent version of PHP is already set up, place this whole project in a publicly hosted directory.
 
-If the server is set to host that directory at any domain and port other than `http://localhost:3000` then lines 84 and 85 in `wp-config.php` should be updated to where the site will be available.
+If the server is set to host that directory at any address and port other than `http://localhost:3000` then lines 84 and 85 in `wp-config.php` should be updated.
 
 ## Features
 ### Theme
-This site uses a custom theme, roughly following the design created for an earlier design-oriented training project. It is created from the base theme [Underscores](https://underscores.me/). The theme is intended just for this site, and would be missing several features if it were applied to another site. However an admin for this site could make changes to things like the site title, logo, and menu contents (and of course pages and posts) without needing to edit the theme itself.
+This site uses a custom theme, following the design created for an earlier design-oriented training project. It is created from the base theme [Underscores](https://underscores.me/). The theme is intended just for this site, and would likely be missing several features if it were applied to another. However an admin for this site could make changes to things like the site title, logo, and menu contents (as well as pages and posts) without needing to edit the theme itself.
 
 ### Contact Form
 As well as giving contact details, the contact page provides a form with validation that users can fill out. The results of the form would be stored and made available to the site's administrator.
